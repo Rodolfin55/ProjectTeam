@@ -7,6 +7,7 @@ CREATE TABLE Book (
     image  VARCHAR(500) NOT NULL, 
     title VARCHAR(50) NOT NULL,
     bookDescription VARCHAR(500) NOT NULL,
+    author VARCHAR(25) NOT NULL,
     theme VARCHAR(25) NOT NULL,
     gender VARCHAR(25) NOT NULL,
     country VARCHAR (25) NOT NULL,
