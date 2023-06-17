@@ -12,10 +12,10 @@ CREATE TABLE House(
 
 CREATE TABLE MainCharacter (
 	id INT UNSIGNED NOT NULL,
+    image BLOB,
     firstName VARCHAR(25) NOT NULL,
     secondName VARCHAR(25) NOT NULL,
     house INT UNSIGNED NOT NULL,
-	image BLOB,
     CONSTRAINT mainCharacter_house_fk FOREIGN KEY (house) REFERENCES House(id),
 	CONSTRAINT mainCharacter_pk PRIMARY KEY (id)
 );
@@ -26,12 +26,11 @@ CREATE TABLE Book (
     title VARCHAR(50) NOT NULL,
     bookDescription VARCHAR(500) NOT NULL,
     author VARCHAR(25) NOT NULL,
-    theme VARCHAR(25) NOT NULL,
     gender VARCHAR(25) NOT NULL,
     country VARCHAR (25) NOT NULL,
     releaseYear INT UNSIGNED NOT NULL,
     price FLOAT UNSIGNED NOT NULL,
-    mainCharacter INT UNSIGNED NOT NULL,
+    mainCharacter INT UNSIGNED,
     CONSTRAINT book_mainCharacter_fk FOREIGN KEY(mainCharacter) REFERENCES MainCharacter(id), 
     CONSTRAINT book_pk PRIMARY KEY (id)
 );
