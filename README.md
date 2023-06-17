@@ -5,3 +5,4 @@
  * Román González
  * Bernardo Lima
  * Luca Almirón
+ * Diego Nieves
