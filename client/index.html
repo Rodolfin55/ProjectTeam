@@ -4,10 +4,70 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
     <title>HP - SHOP</title>
   </head>
-  <body>
+
+
+
+<body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+  
+    <header class="header">
+        <div class="logo">
+            <img src="img/animatedHarryPotter.jpg.webp" alt="logo">     
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Get in touch</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+        
+        <a href="#" class="btn"><button>Contact</button></a>
+
+        <a onclick="openNav()" class="menu" href="#"><button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+        
+            <div class="overlay-content">
+                <a href="#">Products</a>
+                <a href="#">Get in touch</a>
+                <a href="#">About us</a>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="main__encabezado">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>    
+    </section>
+    
+    <div class="prueba">
+        
+    </div>
+        
+    
+    
+
+
+    <footer>
+        <p>All rights reserved ©</p>
+    </footer>
+    <script type="text/javascript" src="nav.js"></script>
+     
+</body>
+
+
 </html>

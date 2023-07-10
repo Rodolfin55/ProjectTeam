@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+html {
+    min-height: 100%;
+    position: relative;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Harry Potter', sans-serif;
+    font-size: 20px;
+}
+/*main*/
+body {
+    background-color: #fff59d;
+    margin: 0;
+    margin-bottom: 40px;
+
+}
+
+section div{
+    background-size: cover;
+    background-image: url(img/hogwarts.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #66999;
+    padding: 30px;
+    color: white;
+}
+footer {
+    width: 100%;
+    background-color: #000000;
+    position: absolute;
+    bottom: 0%;
+    color: white;
+}
+.prueba {
+    height: 1000px;
+    background-color: #eeba30;
+    margin: 10px;
+}
+
+/*header*/
+.header {
+    background-color: #740001;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 83px;
+    padding: 5px 10%;
+}
+
+.header .logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.header .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 1.3s; 
+}
+.header .logo img:hover {
+    transform: scale(1.2);
+}
+
+.header .nav-links {
+    list-style: none;
+}
+.header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links li:hover,
+.overlay a:hover {
+    transform: scale(1.1);
+}
+
+.header .nav-links a {
+    font-size: 700;
+    color: #eceff1;
+
+    
+}
+
+.header .nav-links li a:hover {
+    color: #ffbc0e
+}
+.menu {
+    display: none;
+}
+
+.header .btn button,
+.header .menu button {
+    margin-left: 20px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background-color: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s
+} 
+
+.header .btn button:hover {
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px){
+    .nav-links, .btn {
+        display: none;
+    }
+    .menu {
+        display: inherit;
+    }
+}
+
+/*NAV*/
+
+.header a {
+    text-decoration: none;
+}
+
+.header .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgba(33, 49, 63, .95);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+.header .overlay .overlay-content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .overlay a {
+    padding: 15px;
+    font-size: 36px;
+    display: block;
+    transition: all 0.3s ease 0s;
+    font-weight: 700;
+    color: #eceff1
+}
+
+.header .overlay a:hover,
+.header .overlay a:focus {
+    color: #ffbc0e;
+}
+
+.header .overlay .close {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 65px;
+}
+
+/*media query*/
+@media screen and (max-height:450px){
+    .header .overlay a {
+        font-size: 20px;
+
+    }
+    .header .overlay .close {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+
+}
